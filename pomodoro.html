@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="pomostyle.css">
+</head>
+<body>
+<div class="outerContainer">
+    <div class="pomodoroContainer">
+        <div class="timeContainer">
+            <div class="workTime">
+                <div class="time">
+                    Work
+                </div>
+                <div class="buttons">
+                    <button type="button" name="workUp">^</button>
+                    <span id="workTime">25</span>
+                    <button type="button" name="workDown">v</button>
+                </div>
+            </div>
+            <div class="restTime">
+                <div class="time">
+                    Rest
+                </div>
+                <div class="buttons">
+                    <button type="button" name="restUp">^</button>
+                    <span id="restTime">5</span>
+                    <button type="button" name="restDown">v</button>
+                </div>
+            </div>
+        </div>
+        <div class="clockContainer">
+            <div class="timeTop">
+                <h1 class="title">Session:
+                    <button type="button" name="work">Work</button>
+                    <button type="button" name="rest">Rest</button>
+                </h1>
+                <button type="button" name="start">START</button>
+                <button type="button" name="restart">RESET</button>
+            </div>
+            <div class="timeCounter">
+                <h1 id="currentTime"></h1>
+            </div>
+            <div class="timeBottom">
+
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="timeUp" src="sounds/ride.wav"></audio>
+</body>
+<script type="text/javascript" src="pomoscript.js"></script>
+</html>
